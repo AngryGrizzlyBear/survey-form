@@ -16,8 +16,34 @@
             <input id="email" type="email" name="email" placeholder="Enter your email." required>
             <label>Age</label>
             <input id="number" type="number" name="age" min="10" max="99" placeholder="Enter your age">
-
-
+            <label>Which option best describes your current role?</label>
+            <select id="dropdown">
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Part-Time</option>
+                <option>Full-Time</option>
+            </select>
+            <p>Would you recommend this to a friend?</p>
+            <label>
+                <input name="user-select" value="definitely" type="radio" checked="">
+            Defintely
+        </label>
+        <label>
+            <input name="user-select" value="nah" type="radio" checked="">
+            nah
+        </label>
+     <p>What would you like to see improved? (Check all that apply)</p>
+    <label>
+        <input name="prefer" value="back-end" type="checkbox">
+        Staples 
+    </label>
+    <label>
+        <input name="prefer" value="data-visualization" type="checkbox">
+        Cheese
+    </label>
+    <p>Any comments or suggestions?</p>
+    <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+    <button id="submit" type="submit">Submit</button>
         </form>
     </body>
 </html>
