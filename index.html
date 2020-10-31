@@ -1,49 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>survey-form</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="css/normalize.min.css" />
-</head>
-    <body>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">This is a survey form.</p>
-        <form id="survey-form">
-            <label>Name</label>
-            <input id="name" type="text" name="name" placeholder="Enter your name" required>
-            <label>Email</label>
-            <input id="email" type="email" name="email" placeholder="Enter your email." required>
-            <label>Age</label>
-            <input id="number" type="number" name="age" min="10" max="99" placeholder="Enter your age">
-            <label>Which option best describes your current role?</label>
-            <select id="dropdown">
-                <option>Student</option>
-                <option>Teacher</option>
-                <option>Part-Time</option>
-                <option>Full-Time</option>
-            </select>
-            <p>Would you recommend this to a friend?</p>
-            <label>
-                <input name="user-select" value="definitely" type="radio" checked="">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Form</h1>
+      <p>This is a survey form.</p>
+      <div>
+        <form>
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email."
+            required
+          />
+          <label>Age</label>
+          <input
+            type="number"
+            name="age"
+            min="10"
+            max="99"
+            placeholder="Enter your age"
+          />
+          <label>Which option best describes your current role?</label>
+          <select>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Part-Time</option>
+            <option>Full-Time</option>
+          </select>
+          <p>Would you recommend this to a friend?</p>
+          <label>
+            <input
+              name="user-select"
+              value="definitely"
+              type="radio"
+              checked=""
+            />
             Defintely
-        </label>
-        <label>
-            <input name="user-select" value="nah" type="radio" checked="">
+          </label>
+          <label>
+            <input name="user-select" value="nah" type="radio" checked="" />
             nah
-        </label>
-     <p>What would you like to see improved? (Check all that apply)</p>
-    <label>
-        <input name="prefer" value="back-end" type="checkbox">
-        Staples 
-    </label>
-    <label>
-        <input name="prefer" value="data-visualization" type="checkbox">
-        Cheese
-    </label>
-    <p>Any comments or suggestions?</p>
-    <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
-    <button id="submit" type="submit">Submit</button>
+          </label>
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label>
+            <input name="prefer" value="back-end" type="checkbox" />
+            Staples
+          </label>
+          <label>
+            <input name="prefer" value="data-visualization" type="checkbox" />
+            Cheese
+          </label>
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+          <button id="submit" type="submit">Submit</button>
         </form>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
