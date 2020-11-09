@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/normalize.min.css" />
   </head>
   <body>
+    <div class="center">
+    <h1>Candle Survey</h1>
+  </div>
     <div class="container">
-      <h1>Candle Survey</h1>
       <p>Let us know your thoughts!</p>
       <div>
         <form> 
@@ -17,7 +19,7 @@
               <label>Name</label>
             </div>
             <input
-              class="center-content"
+              class="center-content input"
               type="text"
               name="name"
               placeholder="Enter your name"
@@ -29,7 +31,7 @@
               <label>Email</label>
             </div>
             <input
-            class="center-content"
+            class="center-content input"
               type="email"
               name="email"
               placeholder="Enter your email."
@@ -41,7 +43,7 @@
             <label>Age</label>
           </div>
             <input
-            class="center-content"
+            class="center-content input"
               type="number"
               name="age"
               min="10"
@@ -63,7 +65,7 @@
             </div>
           </div>
           <p class="center">Would you recommend this to a friend?</p>
-          <div class="center-content">
+          <div>
             <label>
               <input
                 name="user-select"
@@ -71,24 +73,24 @@
                 type="radio"
                 checked=""
               />
-              Defintely
+             Yes
             </label>
           </div>
-          <div class="center-content">
+          <div>
             <label>
               <input name="user-select" value="nah" type="radio" checked="" />
-              nah
+              No
             </label>
           </div>
           <p class="center">What would you like to see improved? (Check all that apply)</p>
           <div>
-            <label class="center-content">
+            <label>
               <input name="prefer" value="back-end" type="checkbox" />
               Staples
             </label>
           </div>
           <div>
-            <label>
+            <label> 
               <input name="prefer" value="data-visualization" type="checkbox" />
               Cheese
             </label>
@@ -102,7 +104,7 @@
             ></textarea>
           </div>
           <div class="center">
-            <button id="submit" type="submit">Submit</button>
+            <button  class="button" id="submit" type="submit">Submit</button>
           </div>
         </form>
       </div>
