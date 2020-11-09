@@ -2,4 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
