@@ -5,16 +5,18 @@
     <title>survey-form</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="css/normalize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="center">
-    <h1>Candle Survey</h1>
-  </div>
     <div class="container">
+      <h1>Candle Survey</h1>
       <p>Let us know your thoughts!</p>
       <div>
-        <form> 
-          <div>  
+        <form>
+          <div>
             <div class="center">
               <label>Name</label>
             </div>
@@ -26,12 +28,12 @@
               required
             />
           </div>
-          <div> 
+          <div>
             <div class="center">
               <label>Email</label>
             </div>
             <input
-            class="center-content input"
+              class="center-content input"
               type="email"
               name="email"
               placeholder="Enter your email."
@@ -39,11 +41,11 @@
             />
           </div>
           <div>
-            <div  class="center">
-            <label>Age</label>
-          </div>
+            <div class="center">
+              <label>Age</label>
+            </div>
             <input
-            class="center-content input"
+              class="center-content input"
               type="number"
               name="age"
               min="10"
@@ -53,14 +55,16 @@
           </div>
           <div>
             <div class="center">
-              <label>Which option best describes your current role?</label>
+              <label>Which candle was your favorite?</label>
             </div>
             <div>
               <select class="center-content">
-                <option>Student</option>
-                <option>Teacher</option>
-                <option>Part-Time</option>
-                <option>Full-Time</option>
+                <option>Frosted Forest</option>
+                <option>Cyberry Breeze</option>
+                <option>Sweet Dreams</option>
+                <option>BlackBerry Bliss</option>
+                <option>Cinnamon Swirls</option>
+                <option>Random Sample Scent</option>
               </select>
             </div>
           </div>
@@ -73,7 +77,7 @@
                 type="radio"
                 checked=""
               />
-             Yes
+              Yes
             </label>
           </div>
           <div>
@@ -82,17 +86,43 @@
               No
             </label>
           </div>
-          <p class="center">What would you like to see improved? (Check all that apply)</p>
+          <p class="center">
+            Check all that apply that best describes my candles
+          </p>
           <div>
             <label>
               <input name="prefer" value="back-end" type="checkbox" />
-              Staples
+              Professional
             </label>
           </div>
           <div>
-            <label> 
+            <label>
               <input name="prefer" value="data-visualization" type="checkbox" />
-              Cheese
+              High Quality
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="prefer" value="data-visualization" type="checkbox" />
+              Long Lasting
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="prefer" value="data-visualization" type="checkbox" />
+              Moderate
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="prefer" value="data-visualization" type="checkbox" />
+              Low Quality
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="prefer" value="data-visualization" type="checkbox" />
+              Not Worth Purchasing
             </label>
           </div>
           <p class="center">Any comments or suggestions?</p>
@@ -104,7 +134,7 @@
             ></textarea>
           </div>
           <div class="center">
-            <button  class="button" id="submit" type="submit">Submit</button>
+            <button class="button" id="submit" type="submit">Submit</button>
           </div>
         </form>
       </div>
